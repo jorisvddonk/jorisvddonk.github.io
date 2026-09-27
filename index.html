@@ -2,13 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joris van de Donk</title>
-  <meta name="description" content="Joris van de Donk's GitHub Pages site, currently pointing at the Questmark documentation.">
-  <meta http-equiv="refresh" content="0; url=/questmark/">
-  <link rel="canonical" href="/questmark/">
+  <meta name="description" content="Joris van de Donk — projects: Questmark, ObservableCAFEv2, and more.">
+  <style>
+    :root {
+      --bg: #f7f6f3;
+      --fg: #1d1c1a;
+      --muted: #6b6a66;
+      --accent: #7c4dff;
+      --card: #ffffff;
+      --border: #e5e3de;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem; }
+    h1 { font-size: 2.2rem; margin: 0 0 0.25rem; }
+    .subtitle { color: var(--muted); margin: 0 0 2.5rem; }
+    h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 2.5rem 0 1rem;
+    }
+    ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+    li a {
+      display: block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.3rem;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    li a:hover, li a:focus { border-color: var(--accent); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .title { font-weight: 600; font-size: 1.1rem; }
+    li a:hover .title, li a:focus .title { color: var(--accent); }
+    .desc { color: var(--muted); margin-top: 0.15rem; font-size: 0.95rem; }
+    footer { color: var(--muted); font-size: 0.85rem; margin-top: 3rem; }
+  </style>
 </head>
 <body>
-  <p>Redirecting to the <a href="/questmark/">Questmark documentation</a>&hellip;</p>
-  <script>window.location.replace("/questmark/");</script>
+  <main>
+    <h1>Joris van de Donk</h1>
+    <p class="subtitle">Software developer. Projects and experiments.</p>
+
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <a href="/questmark/">
+          <div class="title">Questmark</div>
+          <div class="desc">Hypertext fiction and conversation tree language, compiler, interpreter and library, where fiction is written as spiced-up Markdown!</div>
+        </a>
+      </li>
+      <li>
+        <a href="/ObservableCAFEv2/">
+          <div class="title">ObservableCAFEv2</div>
+          <div class="desc">Rewrite of ObservableCAFE in Rust, in the Unix Philosophy style.</div>
+        </a>
+      </li>
+      <li>
+        <a href="/feltyrion-explorer/">
+          <div class="title">feltyrion-explorer</div>
+          <div class="desc">Static website showing Feltyrion universe data.</div>
+        </a>
+      </li>
+      <li>
+        <a href="/job-interview-presentation/">
+          <div class="title">job-interview-presentation</div>
+          <div class="desc">A presentation about job interviews and how to succeed at 'em.</div>
+        </a>
+      </li>
+      <li>
+        <a href="/meta-presentation/">
+          <div class="title">meta-presentation</div>
+          <div class="desc">A presentation about making presentations.</div>
+        </a>
+      </li>
+    </ul>
+
+    <footer>Find the source of all of the above on <a href="https://github.com/jorisvddonk">GitHub</a>.</footer>
+  </main>
 </body>
 </html>
